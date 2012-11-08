@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="10dp"
+    android:paddingRight="?android:attr/scrollbarSize" >
+
+    <ImageView
+        android:id="@+id/list_skill_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="Skill icon"
+        android:paddingLeft="5dp"
+        android:src="@drawable/barbarian_cleave" />
+
+    <TextView
+        android:id="@+id/list_skill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/list_skill_icon"
+        android:fadingEdge="horizontal"
+        android:ellipsize="none"
+        android:singleLine="false"
+        android:text="Wrath of the Beserker"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/list_skill_unlocked_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_skill_title"
+        android:layout_alignLeft="@id/list_skill_title"
+        android:ellipsize="none"
+        android:fadingEdge="horizontal"
+        android:singleLine="false"
+        android:text="Unlocked at level: 3"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/list_skill_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/list_skill_unlocked_at"
+        android:layout_below="@id/list_skill_unlocked_at"
+        android:ellipsize="none"
+        android:fadingEdge="horizontal"
+        android:singleLine="false"
+        android:text="Cost: 10 mana"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/list_skill_generates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/list_skill_cost_text"
+        android:layout_below="@id/list_skill_cost_text"
+        android:ellipsize="none"
+        android:fadingEdge="horizontal"
+        android:singleLine="false"
+        android:text="Generate: 5 Fury per attack"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/list_skill_cooldown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/list_skill_generates"
+        android:layout_below="@id/list_skill_generates"
+        android:ellipsize="none"
+        android:fadingEdge="horizontal"
+        android:singleLine="false"
+        android:text="Cooldown: 25 secs"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/list_skill_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/list_skill_cooldown"
+        android:layout_below="@id/list_skill_cooldown"
+        android:fadingEdge="horizontal"
+        android:paddingTop="10dp"
+        android:singleLine="false"
+        android:text="Summon the ancient Barbarians Talic, Korlic, and Madawc to fight alongside you for 15 seconds. Each deals 60% weapon damage per swing in addition to bonus abilities. Talic wields a sword and shield and uses the Whirlwind skill. Korlic wields a massive polearm and uses the Cleave skill. Madawc dual-wields axes and uses the Weapon Throw skill."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

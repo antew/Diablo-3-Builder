@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_title">Are you sure you want to clear the current build?</string>
+    <string name="alert_dialog_title_clear">Are you sure you want to clear the current follower?</string>
+    <string name="alert_dialog_title_clear_all">Are you sure you want to clear all followers?</string>
+    <string name="alert_dialog_title_build_clear_all">Are you sure you want to clear all builds?</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="app_name">Diablo 3 Builder</string>
+    <string name="class_text">Class</string>
+    <string name="lvl">Lvl</string>
+    <string name="Cooldown">Cooldown:</string>
+    <string name="Generate">Generate:</string>
+    <string name="Cost">Cost:</string>
+	<string name="Required_level">Required Level:</string>
+	<string name="Unlocked_at_level">Unlocked at Level:</string>
+	<string name="Max_Level">Max Level</string>
+	<string name="Check_Out_My">Check out my</string>
+	<string name="Build">build</string>
+	<string name="Load_Build">Load Build</string>
+	<string name="EN_Build_URL">http://us.battle.net/d3/en/calculator/</string>
+	<string name="D3_Builder_URL">d3builder://build/</string>
+</resources>

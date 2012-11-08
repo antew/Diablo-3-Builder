@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/empty_follower_top_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/empty_follower_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Skill icon"
+            android:paddingLeft="5dp"
+            android:src="@drawable/templar" />
+
+        <TextView
+            android:id="@+id/empty_follower_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/empty_follower_icon"
+            android:fadingEdge="horizontal"
+            android:text="Templar"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/empty_follower_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/empty_follower_name"
+            android:layout_below="@id/empty_follower_name"
+            android:fadingEdge="horizontal"
+            android:paddingTop="10dp"
+            android:singleLine="false"
+            android:text="Peerless holy warrior who challenges demons head-on in melee."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_follower_skills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_follower_top_wrapper"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/empty_follower_skill_1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:background="@drawable/list_section_divider_holo_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Level 5: Heal"
+            android:textColor="@color/diablo_gold" />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_1_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Heals you or the Templar for 4651 Life." />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_2"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_section_divider_holo_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Level 10: Intimidate"
+            android:textColor="@color/diablo_gold" />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_2_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Enemy units are slowed by 60% for 3 seconds when they hit the Templar." />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_3"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_section_divider_holo_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Level 10: Onslaught"
+            android:textColor="@color/diablo_gold" />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_3_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Delivers a massive blow to an enemy for 200% weapon damage." />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_4"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_section_divider_holo_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Level 15: Guardian"
+            android:textColor="@color/diablo_gold" />
+
+        <TextView
+            android:id="@+id/empty_follower_skill_4_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Rush to the aid of wounded ally, knocking back enemies within 15 yards and healing the wounded ally for 4651 Life." />
+    </LinearLayout>
+
+</RelativeLayout>
